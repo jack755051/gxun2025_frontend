@@ -33,7 +33,7 @@ body {
 }
 
 .button-secondary {
-  background-color: variable.$gray-600; // 次要按鈕背景色
+  background-color: variable.$primary-color-light; // 次要按鈕背景色
   color: #fff; // 白色文字
   padding: 1rem;
   border: none;
@@ -41,11 +41,11 @@ body {
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: darken(variable.$gray-600, 10%); // Hover 時變深
+    background-color: darken(variable.$accent-color, 10%); // Hover 時變深
   }
 
   &:disabled {
-    background-color: variable.$gray-200; // 禁用時背景更淺
+    background-color: text.$gray-200; // 禁用時背景更淺
     color: text.$text-muted; // 禁用文字顏色
   }
 }
