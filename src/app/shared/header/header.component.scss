@@ -1,0 +1,38 @@
+@use './_variables.scss' as colors;
+@use './_typography.scss' as text;
+
+:host {
+  width: 100%;
+  box-sizing: border-box; /* 設定為 border-box */
+  height: 7.5rem;
+  line-height: 7.5rem;
+  display: grid;
+  grid-template-columns: 20% 80%; /* Logo 區域占 20%，按鈕列表占 80% */
+  align-items: center;
+  background-color: colors.$primary-color; /* 使用你的主題色變數 */
+  padding: 0 4rem;
+
+  > .logo {
+    width: 100%; /* 占滿 20% 區域 */
+    height: 100%;
+    background-image: url('/assets/logo.png'); /* 可加 logo 圖片 */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  > .btn-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+
+    > button {
+      line-height: initial;
+      font-size: 1.5rem;
+      color: #fff;
+      padding: 1.5rem 3.5rem;
+    }
+  }
+}

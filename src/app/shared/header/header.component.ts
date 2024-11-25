@@ -1,12 +1,19 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input, OnInit } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'guxn-header',
+  selector: 'gxun-header',
   standalone: true,
-  imports: [],
+  imports: [CommonModule,MatButtonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+  @Input() headerButtonList:string[]=[];
 
+  constructor(){}
+
+  ngOnInit(): void {
+  }
 }

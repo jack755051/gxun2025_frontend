@@ -11,4 +11,12 @@ import { SHARED_COMPONENTS } from './shared/shared';
 })
 export class AppComponent {
   title = 'gxun_frontend';
+  headerButtonList:string[]=[];
+
+  constructor() {
+    this.headerButtonList=['Home','Product','About','Contact'];
+  }
+
+  ngOnInit() {
+  }
 }
