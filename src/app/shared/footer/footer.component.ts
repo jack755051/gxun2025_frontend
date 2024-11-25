@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'guxn-footer',
+  selector: 'gxun-footer',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './footer.component.html',
