@@ -10,7 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements OnInit {
-  @Input() headerButtonList:string[]=[];
+  headerButtonList:string[]=[];
 
   constructor(){}
 
