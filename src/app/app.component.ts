@@ -1,20 +1,28 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SHARED_COMPONENTS } from './shared/shared';
+import {
+    TranslateService,
+    TranslatePipe,
+    TranslateDirective
+} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,...SHARED_COMPONENTS],
+  imports: [RouterOutlet,...SHARED_COMPONENTS,TranslatePipe, TranslateDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'gxun_frontend';
-  headerButtonList:string[]=[];
 
-  constructor() {
-    this.headerButtonList=['Home','Product','About','Contact'];
+  constructor(private translate: TranslateService) {
+        this.translate.addLangs(['zh', 'en']);
+        this.translate.setDefaultLang('en');
+            // 在伺服器環境中使用默認語言
+        const defaultLang = 'en';
+        translate.use(defaultLang);
   }
 
   ngOnInit() {
