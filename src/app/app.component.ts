@@ -1,16 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SHARED_COMPONENTS } from './shared/shared';
+import { COMMON_COMPONENTS } from './common/common';
 import {
     TranslateService,
     TranslatePipe,
     TranslateDirective
 } from "@ngx-translate/core";
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,...SHARED_COMPONENTS,TranslatePipe, TranslateDirective],
+  imports: [RouterOutlet,...COMMON_COMPONENTS,TranslatePipe, TranslateDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
