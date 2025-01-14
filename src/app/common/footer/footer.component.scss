@@ -1,17 +1,86 @@
-@use './_variables.scss' as colors;
-@use './_typography.scss' as text;
+@use "./_variables.scss" as colors;
+@use "./_typography.scss" as text;
 
-:host{
+$normal-font-weight: 500;
+$fat-font-weight: 700;
+
+:host {
   margin: 0;
   display: flex;
+  flex-direction: column;
   width: 100vw;
-  height: 5vh;
   background-color: colors.$blue-500;
   color: text.$gray-50;
   align-items: center;
   justify-content: center;
-  span{
-    font-size: 1.5rem;
-    padding: 1rem 1.2rem;
+  font-size: 1.7rem;
+
+  > .information {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+    > .info-block {
+      width: 50%;
+      height: 100%;
+      display: grid;
+      justify-items: center;
+
+      > .title {
+        font-weight: $fat-font-weight;
+      }
+      > .content {
+        > ul {
+          list-style-type: none;
+
+          > li {
+            font-weight: $normal-font-weight;
+          }
+
+          span {
+            font-weight: $fat-font-weight;
+          }
+        }
+      }
+    }
+
+    > .contact-method {
+    }
+
+    > .social-media {
+    }
+  }
+
+  /* RWD 設定 */
+
+  // 小螢幕
+  @media (max-width: 768px) {
+    height: 12vh; // 增加高度
+    flex-direction: column; // 改為垂直排列
+    .copyright {
+      font-size: 1.2rem; // 字體稍微縮小
+      padding: 0.8rem 1rem;
+    }
+  }
+  // 中螢幕
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: 6vh;
+    .copyright {
+      font-size: 1.4rem;
+      padding: 1rem 1.1rem;
+    }
+  }
+  // 大螢幕
+  @media (min-width: 1024px) {
+    height: 18vh; // 保持原始高度
+    padding: 1vh 0;
+    .information {
+      width: 50%;
+    }
+    .copyright {
+      font-size: 1.8rem;
+      font-weight: 700;
+      padding: 1rem 1.2rem;
+    }
   }
 }
