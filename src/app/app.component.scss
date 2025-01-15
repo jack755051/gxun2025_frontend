@@ -1,18 +1,23 @@
-:host{
+:host {
   width: 100vw;
-  height: 100vh;
+  height: 100vh; /* 確保佔滿整個視窗 */
   display: flex;
-  flex-direction: column;
-  position: relative;
+  flex-direction: column; /* 垂直布局 */
+  box-sizing: border-box;
 
-  > gxun-header{
+  > gxun-header {
     width: 100%;
-    position: absolute;
-    top: 0;
+    flex: 0 0 auto; /* 固定高度 */
   }
 
-  > gxun-footer{
-    position: absolute;
-    bottom: 0;
+  > router-outlet {
+    flex: 1; /* 占據剩餘空間 */
+    width: 100%;
+    overflow: auto; /* 允許中間內容滾動 */
+  }
+
+  > gxun-footer {
+    width: 100%;
+    flex: 0 0 auto; /* 固定高度 */
   }
 }
