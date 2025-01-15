@@ -1,14 +1,15 @@
-@use './_variables.scss' as variable;
-@use './_typography.scss' as text;
+@use "./_variables.scss" as variable;
+@use "./_typography.scss" as text;
 
 html {
   font-size: 10px; /* 1rem = 10px */
+  font-weight: 500;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif; /* 替換為你的字體 */
+  font-family: "Roboto", sans-serif; /* 替換為你的字體 */
   background-color: variable.$blue-50;
   color: text.$gray-900;
   line-height: 1.5;
