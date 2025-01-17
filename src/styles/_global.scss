@@ -14,39 +14,3 @@ body {
   color: text.$gray-900;
   line-height: 1.5;
 }
-
-.button-primary {
-  background-color: variable.$primary-color; // 主按鈕背景色
-  color: #fff; // 白色文字
-  padding: 1rem;
-  border: none;
-  border-radius: 0.5rem;
-  transition: background-color 0.3s;
-
-  &:hover {
-    background-color: variable.$primary-color-dark; // Hover 時使用深色
-  }
-
-  &:disabled {
-    background-color: variable.$primary-color-light; // 禁用時使用淺色
-    color: variable.$blue-300; // 禁用文字色
-  }
-}
-
-.button-secondary {
-  background-color: variable.$primary-color-light; // 次要按鈕背景色
-  color: #fff; // 白色文字
-  padding: 1rem;
-  border: none;
-  border-radius: 0.5rem;
-  transition: background-color 0.3s;
-
-  &:hover {
-    background-color: darken(variable.$accent-color, 10%); // Hover 時變深
-  }
-
-  &:disabled {
-    background-color: text.$gray-200; // 禁用時背景更淺
-    color: text.$text-muted; // 禁用文字顏色
-  }
-}
