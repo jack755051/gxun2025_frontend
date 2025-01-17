@@ -1,4 +1,13 @@
 :host {
   width: 100%;
   height: 100%;
+  .menu {
+    width: 200px;
+    height: 100%;
+    position: relative;
+  }
+
+  nz-float-button-group {
+    position: absolute;
+  }
 }

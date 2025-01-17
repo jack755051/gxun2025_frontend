@@ -1,1 +1,22 @@
-<p>home works!</p>
+<div class="menu">
+  <nz-float-button-group
+    [nzIcon]="root"
+    nzType="primary"
+    nzTrigger="click"
+    style="right: 94px"
+    (nzOnOpenChange)="openChange($event)"
+  >
+    <nz-float-button [nzIcon]="mail"></nz-float-button>
+    <nz-float-button [nzIcon]="form"></nz-float-button>
+  </nz-float-button-group>
+</div>
+
+<ng-template #root
+  ><nz-icon nzType="contacts" nzTheme="outline"></nz-icon
+></ng-template>
+<ng-template #mail>
+  <nz-icon nzType="mail" nzTheme="outline" />
+</ng-template>
+<ng-template #form>
+  <nz-icon nzType="form" nzTheme="outline" />
+</ng-template>
