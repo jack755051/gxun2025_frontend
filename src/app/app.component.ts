@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SHARED_COMPONENTS } from './shared/shared';
 import { COMMON_COMPONENTS } from './common/common';
+import { NzButtonModule } from 'ng-zorro-antd/button';
 
 import {
   TranslateService,
@@ -10,15 +11,16 @@ import {
 } from '@ngx-translate/core';
 
 @Component({
-    selector: 'app-root',
-    imports: [
-        RouterOutlet,
-        ...COMMON_COMPONENTS,
-        TranslatePipe,
-        TranslateDirective,
-    ],
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.scss'
+  selector: 'app-root',
+  imports: [
+    RouterOutlet,
+    ...COMMON_COMPONENTS,
+    TranslatePipe,
+    TranslateDirective,
+    NzButtonModule,
+  ],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'gxun_frontend';
