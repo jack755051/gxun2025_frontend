@@ -4,16 +4,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
-  selector: 'gxun-header',
-  standalone: true,
-  imports: [
-    CommonModule,
-    MatButtonModule,
-    TranslatePipe,
-    TranslateDirective
-  ],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+    selector: 'gxun-header',
+    imports: [
+        CommonModule,
+        MatButtonModule,
+        TranslatePipe,
+        TranslateDirective
+    ],
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements OnInit {
   headerButtonList:string[]=[];

@@ -10,16 +10,15 @@ import {
 } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    ...COMMON_COMPONENTS,
-    TranslatePipe,
-    TranslateDirective,
-  ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    selector: 'app-root',
+    imports: [
+        RouterOutlet,
+        ...COMMON_COMPONENTS,
+        TranslatePipe,
+        TranslateDirective,
+    ],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'gxun_frontend';
