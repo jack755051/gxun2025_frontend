@@ -1,0 +1,8 @@
+<nz-carousel nzAutoPlay>
+  @for (index of carousel; track index) {
+  <div
+    nz-carousel-content
+    [ngStyle]="{ 'background-image': 'url(' + index.path + ')' }"
+  ></div>
+  }
+</nz-carousel>

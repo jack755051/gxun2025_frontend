@@ -18,9 +18,15 @@ import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { IconDefinition } from '@ant-design/icons-angular';
 import { provideNzIcons } from 'ng-zorro-antd/icon';
+import {
+  ContactsOutline,
+  MailOutline,
+  FormOutline,
+} from '@ant-design/icons-angular/icons';
 
 registerLocaleData(zh);
 
+const icons: IconDefinition[] = [ContactsOutline, MailOutline, FormOutline];
 
 const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader = (
   http: HttpClient
