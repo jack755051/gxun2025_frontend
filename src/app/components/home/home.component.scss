@@ -1,4 +1,11 @@
 :host {
   width: 100%;
   height: 100%;
+  padding: 0 3rem;
+
+  gxun-carousel {
+    width: 100% !important;
+    height: 40% !important;
+    display: block !important;
+  }
 }
