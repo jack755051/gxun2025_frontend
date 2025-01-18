@@ -1,11 +1,29 @@
+@use "./_variables.scss" as colors;
+@use "./_typography.scss" as text;
+
 :host {
   width: 100%;
   height: 100%;
   padding: 0 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 
-  gxun-carousel {
+  > gxun-carousel {
     width: 100% !important;
-    height: 40% !important;
+    height: 50% !important;
     display: block !important;
+  }
+
+  > .cards {
+    width: 100%;
+    height: 50% !important;
+    background-color: colors.$blue-100;
+    border-radius: 2.5rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* 添加陰影效果 */
+
+    gxun-card {
+    }
   }
 }

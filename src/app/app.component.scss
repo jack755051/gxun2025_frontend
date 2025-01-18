@@ -13,7 +13,7 @@
   > router-outlet {
     flex: 1; /* 占據剩餘空間 */
     width: 100%;
-    overflow: auto; /* 允許中間內容滾動 */
+    overflow-y: auto;
   }
 
   > gxun-footer {
