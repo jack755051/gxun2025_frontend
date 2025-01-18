@@ -1,15 +1,13 @@
-<div class="menu">
-  <nz-float-button-group
-    [nzIcon]="root"
-    nzType="primary"
-    nzTrigger="click"
-    style="right: 94px"
-    (nzOnOpenChange)="openChange($event)"
-  >
-    <nz-float-button [nzIcon]="mail"></nz-float-button>
-    <nz-float-button [nzIcon]="form"></nz-float-button>
-  </nz-float-button-group>
-</div>
+<nz-float-button-group
+  [nzIcon]="root"
+  nzType="primary"
+  nzTrigger="click"
+  style="right: 94px"
+  (nzOnOpenChange)="openChange($event)"
+>
+  <nz-float-button [nzIcon]="mail"></nz-float-button>
+  <nz-float-button [nzIcon]="form"></nz-float-button>
+</nz-float-button-group>
 
 <ng-template #root
   ><nz-icon nzType="contacts" nzTheme="outline"></nz-icon
