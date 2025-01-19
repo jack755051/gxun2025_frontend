@@ -1,0 +1,11 @@
+// 定義 z-index 等級
+$z-index-auto: auto; // 自動
+$z-index-base: 1; // 基礎層級
+$z-index-dropdown: 100; // 下拉選單
+$z-index-modal: 1000; // 模態框
+$z-index-popover: 1050; // 浮動層
+$z-index-tooltip: 1100; // 提示框
+
+// 集中管理
+$z-index-primary: $z-index-modal; // 主要元件層級
+$z-index-secondary: $z-index-base; // 次要元件層級
