@@ -1,23 +1,26 @@
+@use "./_variables.scss" as colors;
+@use "./_typography.scss" as text;
+@use "./_zindex.scss" as zindexs;
+
 :host {
   width: 100vw;
-  height: 100vh; /* 確保佔滿整個視窗 */
-  display: flex;
-  flex-direction: column; /* 垂直布局 */
-  box-sizing: border-box;
+  min-height: 100vh;
 
   > gxun-header {
     width: 100%;
-    flex: 0 0 auto; /* 固定高度 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: zindexs.$z-index-modal;
   }
 
   > router-outlet {
-    flex: 1; /* 占據剩餘空間 */
-    width: 100%;
-    overflow-y: auto;
+    overflow: auto; /* 啟用滾動條（如內容溢出） */
+    min-height: 0; /* 解決高度被壓縮問題 */
+    display: block;
+    margin-top: 7.5rem; /* 與 header 高度保持一致 */
   }
 
   > gxun-footer {
-    width: 100%;
-    flex: 0 0 auto; /* 固定高度 */
   }
 }
