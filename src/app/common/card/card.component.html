@@ -1,0 +1,9 @@
+<ng-container
+  *ngFor="let status of [ProductStatus.HOT, ProductStatus.NEW_ARRIVAL]"
+  class="cards"
+>
+  <div class="title">
+    <span class="text-md">{{ getProductStatusLabel(status) }}</span>
+  </div>
+  <gxun-card-item [ProductData]="filterProductsByType(status)"></gxun-card-item>
+</ng-container>

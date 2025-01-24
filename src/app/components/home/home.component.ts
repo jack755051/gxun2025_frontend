@@ -8,6 +8,7 @@ import { ViewCarousel } from '../../models/interface/carousel.interface';
 import { ViewCard } from '../../models/interface/card.interface';
 /** mock*/
 import { MockCarousel } from '../../models/mock/mock-carousel';
+import { MockCard } from '../../models/mock/mock-card';
 
 @Component({
   selector: 'gxun-home',
@@ -24,5 +25,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.carousel = MockCarousel.mockCarousel;
+    this.cards = MockCard.mockCards;
   }
 }
