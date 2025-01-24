@@ -5,9 +5,11 @@
 :host {
   width: 100vw;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 
   > router-outlet {
-    margin-top: 7.5rem;
     display: block;
   }
 }
