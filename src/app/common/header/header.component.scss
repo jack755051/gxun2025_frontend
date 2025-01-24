@@ -1,16 +1,19 @@
 @use "./_variables.scss" as colors;
 @use "./_typography.scss" as text;
+@use "./_zindex.scss" as zindexs;
 
 :host {
   width: 100%;
-  box-sizing: border-box; /* 設定為 border-box */
   height: 7.5rem;
   line-height: 7.5rem;
   display: grid;
-  grid-template-columns: 20% 80%; /* Logo 區域占 20%，按鈕列表占 80% */
-  align-items: center;
-  background-color: colors.$primary-color; /* 使用你的主題色變數 */
+  grid-template-columns: 20% 80%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: colors.$primary-color;
   padding: 0 4rem;
+  z-index: zindexs.$z-index-modal;
 
   > .logo {
     width: 100%; /* 占滿 20% 區域 */

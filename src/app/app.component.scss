@@ -4,23 +4,10 @@
 
 :host {
   width: 100vw;
-  min-height: 100vh;
-
-  > gxun-header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: zindexs.$z-index-modal;
-  }
+  overflow: auto;
 
   > router-outlet {
-    overflow: auto; /* 啟用滾動條（如內容溢出） */
-    min-height: 0; /* 解決高度被壓縮問題 */
+    margin-top: 7.5rem;
     display: block;
-    margin-top: 7.5rem; /* 與 header 高度保持一致 */
-  }
-
-  > gxun-footer {
   }
 }
