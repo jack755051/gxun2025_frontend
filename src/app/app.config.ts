@@ -22,11 +22,19 @@ import {
   ContactsOutline,
   MailOutline,
   FormOutline,
+  HeartFill,
+  HeartOutline,
 } from '@ant-design/icons-angular/icons';
 
 registerLocaleData(zh);
 
-const icons: IconDefinition[] = [ContactsOutline, MailOutline, FormOutline];
+const icons: IconDefinition[] = [
+  ContactsOutline,
+  MailOutline,
+  FormOutline,
+  HeartFill,
+  HeartOutline,
+];
 
 const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader = (
   http: HttpClient

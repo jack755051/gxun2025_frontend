@@ -1,0 +1,23 @@
+<ng-container *ngFor="let item of ProductData">
+  <nz-card
+    nzHoverable
+    [nzCover]="coverTemplate"
+    [nzActions]="[actionSetting, actionEdit]"
+    ><nz-card-meta
+      nzTitle="ProductData.productionName"
+      nzDescription="ProductData.productionDescription"
+    ></nz-card-meta></nz-card
+></ng-container>
+
+<ng-template #coverTemplate
+  ><img
+    alt="example"
+    src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+/></ng-template>
+
+<ng-template #actionSetting>
+  <nz-icon nzType="heart" nzTheme="outline" />
+</ng-template>
+<ng-template #actionEdit>
+  <nz-icon nzType="edit" />
+</ng-template>
