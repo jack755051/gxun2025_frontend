@@ -5,4 +5,5 @@ export interface ViewCard {
   type?: ProductStatus;
   productionName: string;
   productionDescription: string;
+  path?: string;
 }

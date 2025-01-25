@@ -17,7 +17,15 @@ nz-card {
   width: 24rem;
   height: 32rem;
 }
-
+::ng-deep .ant-card-cover {
+  &.product-image {
+    width: 100%;
+    height: 14.5rem;
+    background-size: cover; // 背景圖自動適配
+    background-position: center; // 背景居中
+    background-repeat: no-repeat; // 不重複顯示
+  }
+}
 ::ng-deep .ant-card-meta-title {
   font-size: 2rem !important;
 }
