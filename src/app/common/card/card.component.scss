@@ -3,21 +3,13 @@
 :host {
   display: flex !important;
   flex-direction: column;
-  padding: 0rem 3rem;
+  padding: 1rem 3rem;
+
   > .title {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
     padding: 2rem 0rem 1rem 0rem;
-  }
-
-  > gxun-card-item {
-    width: 100% !important;
-    height: 35rem !important;
-    display: block;
-    background-color: colors.$blue-100;
-    border-radius: 2.5rem;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* 添加陰影效果 */
   }
 }

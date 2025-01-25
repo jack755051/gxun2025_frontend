@@ -15,8 +15,8 @@ import {
   imports: [
     RouterOutlet,
     ...COMMON_COMPONENTS,
-    TranslatePipe,
-    TranslateDirective,
+    // TranslatePipe,
+    // TranslateDirective,
     NzButtonModule,
   ],
   templateUrl: './app.component.html',
